@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="192x192" href="images/logo.svg">
+    <title>BS4 inline options</title>
+    <!-- Bootstarp CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- Inline options CSS -->
+    <link rel="stylesheet" href="css/inline-options.css">
+
+    <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+    <style>
+        .code {
+            background: #e7e7e7;
+            padding: 16px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 4px 0;
+            font-size: large;
+            max-width: 100%;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        .inline-code {
+            background: #e7e7e7;
+            padding: 4px 6px;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 4px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container pt-4">
+        <h1>BS4 Inline Options v0.0.0</h1>
+        <div>Extends Bootstrap 4 CSS for creating horizontal radios</div>
+        <img src="images/logo.svg" alt="logo" class="mt-2">
+    </div>
+    
+    <!-- Setup -->
+    <div class="container pt-4">
+        <h5>Setup</h5>
+        <div>Link the following styles:</div>
+        <pre class="w3-code htmlHigh code bg-light p-3 rounded mt-1">&#x3C;!-- Bootstarp CSS --&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css&#x22;&#x3E;
+
+&#x3C;!-- Inline options CSS --&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;inline-options.css&#x22;&#x3E;</pre>
+    </div>
+
+    <!-- Regular Inline Radios -->
+    <div class="container pt-4">
+        <h5>Regular Inline Radios</h5>
+        <div>Reference: <a
+                href="https://getbootstrap.com/docs/4.0/components/forms/#inline">https://getbootstrap.com/docs/4.0/components/forms/#inline</a>
+        </div>
+        <pre class="w3-code htmlHigh code bg-light p-3 rounded mt-1">&#x3C;div class=&#x22;input-group mb-4&#x22;&#x3E;
+    &#x3C;div class=&#x22;form-check form-check-inline&#x22;&#x3E;
+        &#x3C;input class=&#x22;form-check-input&#x22; type=&#x22;radio&#x22; name=&#x22;channelRating&#x22; id=&#x22;star1&#x22; value=&#x22;star1&#x22;&#x3E;
+        &#x3C;label class=&#x22;form-check-label&#x22; for=&#x22;star1&#x22;&#x3E;1 start&#x3C;/label&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;form-check form-check-inline&#x22;&#x3E;
+        &#x3C;input class=&#x22;form-check-input&#x22; type=&#x22;radio&#x22; name=&#x22;channelRating&#x22; id=&#x22;star2&#x22; value=&#x22;star2&#x22; checked&#x3E;
+        &#x3C;label class=&#x22;form-check-label&#x22; for=&#x22;star2&#x22;&#x3E;2 stars&#x3C;/label&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;form-check form-check-inline&#x22;&#x3E;
+        &#x3C;input class=&#x22;form-check-input&#x22; type=&#x22;radio&#x22; name=&#x22;channelRating&#x22; id=&#x22;star3&#x22; value=&#x22;star3&#x22;&#x3E;
+        &#x3C;label class=&#x22;form-check-label&#x22; for=&#x22;star3&#x22;&#x3E;3 stars&#x3C;/label&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;form-check form-check-inline&#x22;&#x3E;
+        &#x3C;input class=&#x22;form-check-input&#x22; type=&#x22;radio&#x22; name=&#x22;channelRating&#x22; id=&#x22;star4&#x22; value=&#x22;star4&#x22;&#x3E;
+        &#x3C;label class=&#x22;form-check-label&#x22; for=&#x22;star4&#x22;&#x3E;4 stars&#x3C;/label&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;form-check form-check-inline&#x22;&#x3E;
+        &#x3C;input class=&#x22;form-check-input&#x22; type=&#x22;radio&#x22; name=&#x22;channelRating&#x22; id=&#x22;star5&#x22; value=&#x22;star5&#x22;&#x3E;
+        &#x3C;label class=&#x22;form-check-label&#x22; for=&#x22;star5&#x22;&#x3E;5 stars&#x3C;/label&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</pre>
+        <div class="input-group mb-4">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating" id="star1" value="star1">
+                <label class="form-check-label" for="star1">1 start</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating" id="star2" value="star2" checked>
+                <label class="form-check-label" for="star2">2 stars</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating" id="star3" value="star3">
+                <label class="form-check-label" for="star3">3 stars</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating" id="star4" value="star4">
+                <label class="form-check-label" for="star4">4 stars</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating" id="star5" value="star5">
+                <label class="form-check-label" for="star5">5 stars</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-4">
+        <h5>Inline Options</h5>
+        <div>Add <span class="w3-code cssHigh bg-light inline-code">.inline-options</span> class with the parent
+            <span class="w3-code cssHigh bg-light inline-code">.input-group</span> element</div>
+        <pre class="w3-code htmlHigh code bg-light p-3 rounded mt-1">&#x3C;div class=&#x22;input-group mb-4 inline-options&#x22;&#x3E;
+    ...
+&#x3C;/div&#x3E;</pre>
+        <div class="input-group mb-4 inline-options">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating2" id="star21" value="star21">
+                <label class="form-check-label" for="star21">1 start</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating2" id="star22" value="star22" checked>
+                <label class="form-check-label" for="star22">2 stars</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating2" id="star23" value="star23">
+                <label class="form-check-label" for="star23">3 stars</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating2" id="star24" value="star24">
+                <label class="form-check-label" for="star24">4 stars</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating2" id="star25" value="star25">
+                <label class="form-check-label" for="star25">5 stars</label>
+            </div>
+        </div>
+        <h6>
+            With prepended text
+        </h6>
+        <pre class="w3-code htmlHigh code bg-light p-3 rounded mt-1">&#x3C;div class=&#x22;input-group mb-4 inline-options&#x22;&#x3E;
+    &#x3C;div class=&#x22;input-group-prepend&#x22;&#x3E;
+        &#x3C;span class=&#x22;input-group-text&#x22;&#x3E;How much stars would you like to give to this channel?&#x3C;/span&#x3E;
+    &#x3C;/div&#x3E;
+    ...
+&#x3C;/div&#x3E;</pre>
+        <div class="input-group mb-4 inline-options">
+            <div class="input-group-prepend">
+                <span class="input-group-text">How much stars would you like to give to this channel?</span>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating3" id="star31" value="star31">
+                <label class="form-check-label" for="star31">1 start</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating3" id="star32" value="star32" checked>
+                <label class="form-check-label" for="star32">2 stars</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating3" id="star33" value="star33">
+                <label class="form-check-label" for="star33">3 stars</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating3" id="star34" value="star34">
+                <label class="form-check-label" for="star34">4 stars</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating3" id="star35" value="star35">
+                <label class="form-check-label" for="star35">5 stars</label>
+            </div>
+        </div>
+        <div>
+            <span class="w3-code cssHigh bg-light inline-code">.input-group</span> is actually a block element. To make
+            it inline, add classes <span class="w3-code cssHigh bg-light inline-code">.d-inline-flex</span> and <span
+                class="w3-code cssHigh bg-light inline-code">.w-auto</span>
+        </div>
+        <pre class="w3-code htmlHigh code bg-light p-3 rounded mt-1">&#x3C;div class=&#x22;input-group mb-4 shadow-sm d-inline-flex w-auto inline-options&#x22;&#x3E;
+    &#x3C;div class=&#x22;input-group-prepend&#x22;&#x3E;
+        &#x3C;span class=&#x22;input-group-text&#x22;&#x3E;How much stars would you like to give to this channel?&#x3C;/span&#x3E;
+    &#x3C;/div&#x3E;
+    ...
+&#x3C;/div&#x3E;</pre>
+        <div class="input-group mb-4 shadow-sm d-inline-flex w-auto inline-options">
+            <div class="input-group-prepend">
+                <span class="input-group-text">How much stars would you like to give to this channel?</span>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating4" id="star41" value="star41">
+                <label class="form-check-label" for="star41">1 start</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating4" id="star42" value="star42" checked>
+                <label class="form-check-label" for="star42">2 stars</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating4" id="star43" value="star43">
+                <label class="form-check-label" for="star43">3 stars</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating4" id="star44" value="star44">
+                <label class="form-check-label" for="star44">4 stars</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="channelRating4" id="star45" value="star45">
+                <label class="form-check-label" for="star45">5 stars</label>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        w3CodeColor();
+    </script>
+</body>
+
+</html>

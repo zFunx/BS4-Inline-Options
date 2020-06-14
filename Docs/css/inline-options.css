@@ -1,0 +1,48 @@
+.input-group.inline-options .form-check-inline {
+    margin: 0;
+}
+
+.input-group.inline-options .form-check-inline .form-check-input {
+    display: none;
+}
+
+.input-group.inline-options .form-check-inline .form-check-input ~ label {
+    cursor: pointer;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-right-width: 0;
+    height: 100% !important;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    display: flex !important;
+    align-items: center !important;
+    transition: 0.15s ease-in-out;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.input-group.inline-options .form-check-inline:last-child,
+.input-group.inline-options .form-check-inline:last-child .form-check-input ~ label {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.input-group.inline-options .form-check-inline:last-child .form-check-input ~ label {
+    border-right-width: 1px;
+}
+
+.input-group.inline-options .form-check-inline:first-child,
+.input-group.inline-options .form-check-inline:first-child .form-check-input ~ label {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.input-group.inline-options .form-check-inline .form-check-input:checked ~ label {
+    background-color: var(--success) !important;
+    color: #fff;
+    border-color: var(--success);
+}
+
+.input-group.inline-options {
+    border-radius: 0.25rem !important;
+}
