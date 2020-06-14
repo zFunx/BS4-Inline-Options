@@ -1,11 +1,11 @@
-![Logo](Docs/images/logo.svg)
+![Logo](docs/images/logo.svg)
 
 # BS4 Inline Options v0.0.0
 Extends Bootstrap 4 CSS for creating horizontal radios
 
-![Image 1](Docs/images/image-1.png)
+![Image 1](docs/images/image-1.png)
 
-[Docs]()
+[docs](https://zfunx.github.io/BS4-Inline-Options/)
 
 ### Upcoming features and fixes
 - Different color options
