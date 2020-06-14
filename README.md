@@ -5,7 +5,7 @@ Extends Bootstrap 4 CSS for creating horizontal radios
 
 ![Image 1](docs/images/image-1.png)
 
-[docs](https://zfunx.github.io/BS4-Inline-Options/)
+[Go to Docs](https://zfunx.github.io/BS4-Inline-Options/)
 
 ### Upcoming features and fixes
 - Different color options
